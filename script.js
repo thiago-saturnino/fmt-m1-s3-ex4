@@ -7,10 +7,10 @@ function iniciar() {
 
 function alarmeAniversario() {
   iniciar();
-  const d1 = "2023-02-16";
-  const d2 = "2023-02-16"; // pode ser também window.prompt("Qual a data do seu aniversário?");
 
-  const diffInMs = new Date(d2) - new Date(d1);
+  const d2 = "2023-02-27"; // pode ser também window.prompt("Qual a data do seu aniversário?");
+
+  const diffInMs = new Date(d2) - new Date();
   const diffInDays = diffInMs / (1000 * 60 * 60 * 24);
   if (diffInDays == 0) {
     window.alert("Feliz Aniversário");
